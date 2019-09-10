@@ -29,9 +29,9 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display display={display}/>
-        <OperatorButtons/>
+        <OperatorButtons onTap={handler}/>
         <Buttons onTap={handler}/>
-        <SpecialButtons/>
+        <SpecialButtons onTap ={handler}/>
       </div>
     </div>
   );

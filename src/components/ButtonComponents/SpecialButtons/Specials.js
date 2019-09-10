@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import SpecialButton from './SpecialButton';
 //Import your array data to from the provided data file
 import {specials} from '../../../data';
-const Specials = () => {
+const Specials = ({onTap}) => {
   // STEP 2 - add the imported data to state
   const [specialCharacters, setSpecialCharacters] = useState(specials);
   return (
@@ -16,7 +16,7 @@ const Specials = () => {
        {
          specialCharacters.map(special => <SpecialButton 
           specaialCharacter={special}
-          onTap = {() => {}}
+          onTap = {(special) => onTap(special)}
           />)
        }
     </div>
