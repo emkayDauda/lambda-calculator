@@ -14,7 +14,7 @@ const Operators = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {
-         stateOperators.map(operator => {<OperatorButton operator={operator.value} onTap={() => {}}/>})
+          stateOperators.map(operator => <OperatorButton operator={operator.value}/>)
        }
     </div>
   );
