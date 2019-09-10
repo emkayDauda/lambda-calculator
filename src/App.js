@@ -20,6 +20,14 @@ function App() {
   const [display, updateDisplay] = useState('0');
 
   function handler(whatComesIn) {
+    if (whatComesIn === 'C') {
+      updateDisplay('0')
+      return;
+    }
+    else if (display === '0') {
+      updateDisplay(whatComesIn)
+      return;
+    }
     updateDisplay(display + whatComesIn);
   }
 
@@ -29,9 +37,16 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display display={display}/>
-        <OperatorButtons onTap={handler}/>
-        <Buttons onTap={handler}/>
-        <SpecialButtons onTap ={handler}/>
+        <div className="buttonsContainer">
+          <div className="left-buttons">
+          <SpecialButtons onTap ={handler}/>
+          <Buttons onTap={handler}/>
+          </div>
+          <div className="right-buttons">
+          <OperatorButtons onTap={handler}/>
+
+          </div>
+        </div>
       </div>
     </div>
   );
