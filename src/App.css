@@ -3,6 +3,8 @@
     width: 100%;
     max-width: 550px;
     border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
 }
@@ -19,4 +21,49 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+  }
+
+  .buttonsContainer{
+    display: flex;
+  }
+
+  .left-buttons{
+      width: 70%;
+      /* flex-grow: 1; */
+  }
+
+  .right-buttons {
+      display: flex;
+      flex-direction: column;
+      /* width: 10%; */
+  }
+
+  .db-button {
+    border-radius: 50%;
+    background: darkblue;
+    padding: 1rem;
+    margin: .5rem 8%;
+    color: white;
+    font-size: 1.3rem;
+    /* width: 30%; */
+  }
+
+  .op-button {
+    border-radius: 50%;
+    background: lightblue;
+    padding: 1rem;
+    margin: .5rem 0;
+    color: black;
+    font-size: 1.3rem;
+    /* width: 30%; */
+  }
+
+  .ch-button {
+    border-radius: 50%;
+    background: lightblue;
+    padding: 1rem;
+    margin: .5rem 8%;
+    color: black;
+    font-size: 1.3rem;
+    /* width: 30%; */
   }
